@@ -68,7 +68,8 @@ def all_holidays_with_bbq(holiday_hash)
     holidays.collect do |holiday, supply|
       supply.collect do |value|
       if value == "BBQ"
-        holiday
+        answer = []
+        answer.push(holiday)
       end
     end
   end
